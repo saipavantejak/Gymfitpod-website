@@ -79,5 +79,19 @@
   }
 </script>
 
+  <!-- Custom Splash Overlay -->
+<div id="splash" class="fixed inset-0 bg-white flex items-center justify-center z-50">
+  <img src="icon-512.png" class="animate-bounce w-24 h-24" />
+</div>
+
+<script>
+  window.addEventListener('load', () => {
+    setTimeout(() => {
+      const splash = document.getElementById('splash');
+      if (splash) splash.style.display = 'none';
+    }, 1000); // Delay for 1s animation
+  });
+</script>
+
 </body>
 </html>
