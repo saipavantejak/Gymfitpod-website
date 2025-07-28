@@ -10,10 +10,10 @@
 </head>
 <body class="bg-black text-white font-sans overflow-hidden">
 
-  <!-- Custom Splash Overlay -->
-  <div id="splash" class="fixed inset-0 flex items-center justify-center z-50" style="background-color: #white;">
-    <img src="icon-512.png" class="w-[80%] h-auto opacity-0 animate-fadeInOut" />
-  </div>
+  !-- Custom Splash Overlay -->
+<div id="splash" class="fixed inset-0 flex items-center justify-center z-50 bg-[#0A0A0A]">
+  <img src="Contrast.png" class="w-[80%] h-auto z-10 fade-logo" />
+</div>
 
   <!-- Main App Content -->
   <div id="main" class="opacity-0 transition-opacity duration-500">
@@ -79,29 +79,25 @@
   </div>
 
   <style>
-  @keyframes splashFade {
-    from { opacity: 1; }
-    to { opacity: 0; }
-  }
-  .splashFadeOut {
-    animation: splashFade 1.5s ease-in-out forwards;
-  }
-  </style>
+@keyframes fadeOutLogo {
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}
+.fade-logo {
+  animation: fadeOutLogo 1.5s ease-in-out forwards;
+}
+</style>
 
-  <script>
+<script>
   window.addEventListener('load', () => {
     const splash = document.getElementById('splash');
-    const main = document.getElementById('main');
     const body = document.body;
-
-    splash.classList.add('splashFadeOut');
-
     setTimeout(() => {
       splash.remove();
-      main.classList.remove('opacity-0');
-      body.classList.remove('overflow-hidden'); // ✅ Enable scrolling again
+      body.classList.remove('overflow-hidden'); // Ensure scrolling resumes
     }, 1500);
   });
 </script>
+  
 </body>
 </html>
