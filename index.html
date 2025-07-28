@@ -89,21 +89,19 @@
   </style>
 
   <script>
-  if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('service-worker.js')
-      .then(reg => console.log('SW registered', reg))
-      .catch(err => console.log('SW registration failed', err));
-  }
-
   window.addEventListener('load', () => {
     const splash = document.getElementById('splash');
     const main = document.getElementById('main');
+    const body = document.body;
+
     splash.classList.add('splashFadeOut');
+
     setTimeout(() => {
       splash.remove();
       main.classList.remove('opacity-0');
+      body.classList.remove('overflow-hidden'); // ✅ Enable scrolling again
     }, 1500);
   });
-  </script>
+</script>
 </body>
 </html>
