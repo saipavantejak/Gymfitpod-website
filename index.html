@@ -80,26 +80,31 @@
 </script>
 
   <!-- Custom Splash Overlay -->
-<div id="splash" class="fixed inset-0 flex items-center justify-center z-50 bg-[#0A0A0A] animate-fadeOut">
+<div id="splash" class="splash fixed inset-0 flex items-center justify-center z-50">
   <img src="Contrastlogo.png" class="w-[80%] h-auto" />
 </div>
 
 <style>
-@keyframes fadeOut {
-  0% { opacity: 1; }
-  100% { opacity: 0; }
+.splash {
+  background-color: #0A0A0A;
+  animation: splashFade 1.5s ease-in-out forwards;
 }
-.animate-fadeOut {
-  animation: fadeOut 1.5s ease-in-out forwards;
+
+@keyframes splashFade {
+  from { opacity: 1; }
+  to { opacity: 0; }
 }
 </style>
 
 <script>
   window.addEventListener('load', () => {
-    setTimeout(() => {
-      const splash = document.getElementById('splash');
-      if (splash) splash.remove();
-    }, 1500);
+    const splash = document.getElementById('splash');
+    if (splash) {
+      splash.classList.add('splash');
+      setTimeout(() => {
+        splash.remove(); // cleaner than display:none
+      }, 1500);
+    }
   });
 </script>
 
