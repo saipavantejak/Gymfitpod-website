@@ -10,8 +10,14 @@
 </head>
 <body class="bg-black text-white font-sans overflow-hidden">
 
-  <!-- Main App Content -->
-  <div id="main" class="opacity-0 transition-opacity duration-500">
+  <!-- Custom Splash Overlay -->
+<div id="splash" class="fixed inset-0 flex items-center justify-center z-50 bg-[#0A0A0A]">
+  <img src="Contrast.png" class="w-[80%] h-auto z-10 fade-logo" />
+</div>
+  
+<!-- Main App Content -->
+<div id="main" class="opacity-0 transition-opacity duration-500">
+
     <!-- NAVBAR -->
     <nav class="flex justify-between items-center p-4">
       <img src="logo.png" alt="GymFitPod Logo" class="h-10">
@@ -72,13 +78,8 @@
       &copy; 2025 GymFitPod Private Limited. All rights reserved.
     </footer>
   </div>
-
-  !-- Custom Splash Overlay -->
-<div id="splash" class="fixed inset-0 flex items-center justify-center z-50 bg-[#0A0A0A]">
-  <img src="Contrast.png" class="w-[80%] h-auto z-10 fade-logo" />
-</div>
   
-  <style>
+<style>
 @keyframes fadeOutLogo {
   0% { opacity: 1; }
   100% { opacity: 0; }
@@ -90,13 +91,16 @@
 
 <script>
   window.addEventListener('load', () => {
-    const splash = document.getElementById('splash');
-    const body = document.body;
-    setTimeout(() => {
-      splash.remove();
-      body.classList.remove('overflow-hidden'); // Ensure scrolling resumes
-    }, 1500);
-  });
+  const splash = document.getElementById('splash');
+  const body = document.body;
+  const main = document.getElementById('main'); // ✅ add this
+
+  setTimeout(() => {
+    splash.remove();
+    main.classList.remove('opacity-0'); // ✅ fade in the app
+    body.classList.remove('overflow-hidden'); // ✅ allow scrolling
+  }, 1500);
+});
 </script>
   
 </body>
