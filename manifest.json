@@ -3,11 +3,11 @@
   "short_name": "GymFitPod",
   "start_url": ".",
   "display": "standalone",
-  "background_color": "#FFFFFF",
+  "background_color": "#OAOAOA",
   "theme_color": "#00C26E",
   "icons": [
   {
-    "src": "icon-512.png",
+    "src": "contrastlogo.png",
     "sizes": "512x512",
     "type": "image/png"
   }
