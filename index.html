@@ -1,120 +1,108 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
   <link rel="manifest" href="manifest.json">
   <meta name="theme-color" content="#0A0A0A">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>GymFitPod – India's First Private Gym Pod</title>
+  <title>GymFitPod – Private Fitness Reimagined</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body class="bg-black text-white font-sans overflow-hidden">
-
-  <!-- Custom Splash Overlay -->
-  <div id="splash" class="fixed inset-0 flex items-center justify-center z-50 bg-[#0A0A0A]">
+<body class="bg-black text-white font-sans overflow-hidden">  <!-- Custom Splash Overlay -->  <div id="splash" class="fixed inset-0 flex items-center justify-center z-50 bg-[#0A0A0A]">
     <img src="Contrastlogo.png" class="w-[80%] h-auto z-10 fade-logo" />
-  </div>
+  </div>  <!-- Main App Content -->  <div id="main" class="opacity-0 transition-opacity duration-500 max-w-7xl mx-auto px-4"><!-- NAVBAR -->
+<nav class="flex justify-between items-center p-4">
+  <img src="logo.png" alt="GymFitPod Logo" class="h-10">
+  <ul class="hidden md:flex gap-6 text-sm">
+    <li><a href="#pods">Pods</a></li>
+    <li><a href="#pricing">Pricing</a></li>
+    <li><a href="#faqs">FAQs</a></li>
+  </ul>
+  <a href="https://play.google.com/store/apps/details?id=com.gymfitpod.app" class="text-black px-4 py-1 rounded font-medium" style="background-color: #6EC219;">Log In</a>
+</nav>
 
-  <!-- Main App Content -->
-  <div id="main" class="opacity-0 transition-opacity duration-500">
+<!-- HERO SECTION -->
+<section class="text-center py-12 max-w-4xl mx-auto space-y-6">
+  <h1 class="text-3xl sm:text-4xl font-bold leading-tight">No Crowds. No Mirrors. Just You.</h1>
+  <p class="text-gray-300 max-w-xl mx-auto text-base sm:text-lg">Experience India’s first private gym pod designed for calm, commitment, and privacy.</p>
+  <a href="https://play.google.com/store/apps/details?id=com.gymfitpod.app" class="text-black px-6 py-3 rounded text-lg font-semibold transition hover:scale-105" style="background-color: #6EC219;">📲 Download the App</a>
+</section>
 
-    <!-- NAVBAR -->
-    <nav class="flex justify-between items-center p-4">
-      <img src="logo.png" alt="GymFitPod Logo" class="h-10">
-      <ul class="flex gap-6 text-sm">
-        <li><a href="#pods">Pods</a></li>
-        <li><a href="#pricing">Pricing</a></li>
-        <li><a href="#faqs">FAQs</a></li>
-      </ul>
-      <a href="https://play.google.com/store/apps/details?id=com.gymfitpod.app" class="text-black px-4 py-1 rounded font-medium" style="background-color: #6EC219;">Log In</a>
-    </nav>
-
-    <!-- HERO SECTION -->
-    <section class="text-center p-10 space-y-6">
-      <h1 class="text-4xl font-bold leading-tight">No Crowds. No Mirrors. Just You.</h1>
-      <p class="text-gray-300 max-w-md mx-auto">Experience India’s first private gym pod designed for calm, commitment, and privacy.</p>
-      <a href="https://play.google.com/store/apps/details?id=com.gymfitpod.app" class="text-black px-6 py-3 rounded text-lg font-semibold transition hover:scale-105" style="background-color: #6EC219;">📲 Download the App</a>
-    </section>
-
-    <!-- HOW IT WORKS -->
-    <section class="bg-[#0A0A0A] text-white py-16 text-center">
-      <h2 class="text-3xl font-bold mb-8">How It Works</h2>
-      <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-5xl mx-auto px-6">
-        <div class="space-y-4 how-step">
-          <div class="text-4xl">📲</div>
-          <h3 class="text-xl font-semibold">Download the App</h3>
-          <p class="text-gray-400">Get GymFitPod on your phone from Google Play or App Store.</p>
-        </div>
-        <div class="space-y-4 how-step">
-          <div class="text-4xl">📆</div>
-          <h3 class="text-xl font-semibold">Book Your Pod</h3>
-          <p class="text-gray-400">Choose your time. Reserve your private gym space.</p>
-        </div>
-        <div class="space-y-4 how-step">
-          <div class="text-4xl">💪</div>
-          <h3 class="text-xl font-semibold">Workout. Alone.</h3>
-          <p class="text-gray-400">Step into your pod. No crowd. No mirrors. Just you.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- FEATURES -->
-    <div class="grid grid-cols-2 sm:grid-cols-3 gap-6 text-center p-6">
-      <div><p class="text-[#6EC219] text-xl mb-2">📅</p><p>Easy Booking</p></div>
-      <div><p class="text-[#6EC219] text-xl mb-2">🔒</p><p>Private & Safe</p></div>
-      <div><p class="text-[#6EC219] text-xl mb-2">⚡</p><p>Smart Access</p></div>
+<!-- HOW IT WORKS SECTION -->
+<section class="bg-[#0A0A0A] text-white py-16 text-center">
+  <h2 class="text-3xl font-bold mb-8">How It Works</h2>
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-6xl mx-auto px-6">
+    <div class="space-y-4 how-step">
+      <div class="text-4xl">📲</div>
+      <h3 class="text-xl font-semibold">Download the App</h3>
+      <p class="text-gray-400">Get GymFitPod on your phone from Google Play or App Store.</p>
     </div>
-
-    <!-- PODS SECTION -->
-    <section id="pods" class="p-8 space-y-4 text-center">
-      <h2 class="text-2xl font-bold">Your Pod, Your Rules</h2>
-      <p class="text-gray-400">Everything you need. Nothing you don’t.</p>
-      <div class="flex justify-center">
-        <img src="pod1.jpg" alt="Pod Interior" class="rounded max-w-md">
-      </div>
-    </section>
-
-    <!-- PRICING -->
-    <section id="pricing" class="p-10 text-center">
-      <h2 class="text-2xl font-bold mb-2">Our Pricing</h2>
-      <p class="text-gray-400 mb-6">Simple. Flexible. ₹49 per 30 minutes.</p>
-      <div class="inline-block border border-gray-700 p-6 rounded-xl">
-        <p class="text-xl font-semibold">Standard Plan</p>
-        <p class="text-4xl font-bold my-2">₹49</p>
-        <p class="text-gray-400 text-sm">per 30-minute session</p>
-      </div>
-    </section>
-
-    <!-- FAQ -->
-    <section id="faqs" class="p-8">
-      <h2 class="text-2xl font-bold text-center mb-4">FAQs</h2>
-      <div class="space-y-4 max-w-2xl mx-auto">
-        <div><strong>Is it really private?</strong><p class="text-gray-400">Yes. Each pod is completely yours during your session.</p></div>
-        <div><strong>How do I unlock the pod?</strong><p class="text-gray-400">Using your phone after booking confirmation.</p></div>
-        <div><strong>Can I cancel my booking?</strong><p class="text-gray-400">Yes, with a 30-minute prior notice.</p></div>
-      </div>
-    </section>
-
-    <!-- DOWNLOAD CTA -->
-    <section class="bg-[#0A0A0A] text-center py-16 px-4">
-      <h2 class="text-3xl font-bold text-white mb-4">Ready to Train Alone?</h2>
-      <p class="text-gray-400 mb-6 text-lg">No sign-up forms. No spam. Just the GymFitPod app and your space.</p>
-      <a href="https://play.google.com/store/apps/details?id=com.gymfitpod.app"
-         class="inline-block bg-[#6EC219] text-black px-8 py-3 rounded-lg text-lg font-semibold transition hover:scale-105">
-         📲 Download the App
-      </a>
-    </section>
-
-    <!-- FOOTER -->
-    <footer class="text-center text-gray-500 p-6 text-sm fade-in-up">
-      <p>&copy; 2025 GymFitPod Private Limited. All rights reserved.</p>
-      <p class="mt-2 text-gray-400 text-xs">Made for those who train without an audience.</p>
-    </footer>
-
+    <div class="space-y-4 how-step">
+      <div class="text-4xl">📆</div>
+      <h3 class="text-xl font-semibold">Book Your Pod</h3>
+      <p class="text-gray-400">Choose your time. Reserve your private gym space.</p>
+    </div>
+    <div class="space-y-4 how-step">
+      <div class="text-4xl">💪</div>
+      <h3 class="text-xl font-semibold">Workout. Alone.</h3>
+      <p class="text-gray-400">Step into your pod. No crowd. No mirrors. Just you.</p>
+    </div>
   </div>
+</section>
 
-  <!-- STYLES -->
-  <style>
+<!-- FEATURE ICONS -->
+<div class="grid grid-cols-2 md:grid-cols-3 gap-6 text-center p-6">
+  <div><p class="text-[#6EC219] text-2xl mb-2">📅</p><p>Easy Booking</p></div>
+  <div><p class="text-[#6EC219] text-2xl mb-2">🔒</p><p>Private & Safe</p></div>
+  <div><p class="text-[#6EC219] text-2xl mb-2">⚡</p><p>Smart Access</p></div>
+</div>
+
+<!-- PODS SECTION -->
+<section id="pods" class="p-8 space-y-4 text-center max-w-3xl mx-auto">
+  <h2 class="text-2xl md:text-3xl font-bold">Your Pod, Your Rules</h2>
+  <p class="text-gray-400">Everything you need. Nothing you don’t.</p>
+  <div class="flex justify-center">
+    <img src="pod1.jpg" alt="Pod Interior" class="rounded max-w-md w-full object-cover">
+  </div>
+</section>
+
+<!-- PRICING SECTION -->
+<section id="pricing" class="p-10 text-center max-w-xl mx-auto">
+  <h2 class="text-2xl md:text-3xl font-bold mb-2">Our Pricing</h2>
+  <p class="text-gray-400 mb-6 text-base sm:text-lg">Simple. Flexible. ₹49 per 30 minutes.</p>
+  <div class="inline-block border border-gray-700 p-6 rounded-xl">
+    <p class="text-xl font-semibold">Standard Plan</p>
+    <p class="text-4xl font-bold my-2">₹49</p>
+    <p class="text-gray-400 text-sm">per 30-minute session</p>
+  </div>
+</section>
+
+<!-- FAQ SECTION -->
+<section id="faqs" class="p-8 max-w-2xl mx-auto">
+  <h2 class="text-2xl md:text-3xl font-bold text-center mb-4">FAQs</h2>
+  <div class="space-y-6">
+    <div><strong>Is it really private?</strong><p class="text-gray-400">Yes. Each pod is completely yours during your session.</p></div>
+    <div><strong>How do I unlock the pod?</strong><p class="text-gray-400">Using your phone after booking confirmation.</p></div>
+    <div><strong>Can I cancel my booking?</strong><p class="text-gray-400">Yes, with a 30-minute prior notice.</p></div>
+  </div>
+</section>
+
+<!-- DOWNLOAD CTA SECTION -->
+<section class="bg-[#0A0A0A] text-center py-16 px-4">
+  <h2 class="text-3xl font-bold text-white mb-4">Ready to Train Alone?</h2>
+  <p class="text-gray-400 mb-6 text-lg">No sign-up forms. No spam. Just the GymFitPod app and your space.</p>
+  <a href="https://play.google.com/store/apps/details?id=com.gymfitpod.app"
+     class="inline-block bg-[#6EC219] text-black px-8 py-3 rounded-lg text-lg font-semibold transition hover:scale-105">
+     📲 Download the App
+  </a>
+</section>
+
+<!-- FOOTER -->
+<footer class="text-center text-gray-500 p-6 text-sm fade-in-up">
+  <p>&copy; 2025 GymFitPod Private Limited. All rights reserved.</p>
+  <p class="mt-2 text-gray-400 text-xs">Made for those who train without an audience.</p>
+</footer>
+
+  </div>  <style>
     @keyframes fadeOutLogo {
       0% { opacity: 1; }
       100% { opacity: 0; }
@@ -131,10 +119,7 @@
       from { opacity: 0; transform: translateY(20px); }
       to { opacity: 1; transform: translateY(0); }
     }
-  </style>
-
-  <!-- SCRIPTS -->
-  <script>
+  </style>  <script>
     window.addEventListener('load', () => {
       const splash = document.getElementById('splash');
       const body = document.body;
@@ -151,7 +136,5 @@
         });
       }, 1500);
     });
-  </script>
-
-</body>
+  </script></body>
 </html>
