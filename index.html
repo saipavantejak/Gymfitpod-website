@@ -16,70 +16,39 @@
     }
   </style>
 </head>
-<body class="bg-black text-white font-sans overflow-hidden">  <!-- Splash Screen -->  <div id="splash" class="fixed inset-0 flex items-center justify-center z-50 bg-black">
+<body class="bg-black text-white font-sans overflow-hidden">
+  <!-- Splash Screen -->
+  <div id="splash" class="fixed inset-0 flex items-center justify-center z-50 bg-black">
     <img src="Contrastlogo.png" class="w-[80%] h-auto fade-logo" />
-  </div>  <!-- Sticky CTA Bar -->  <div id="sticky-cta" class="fixed bottom-0 w-full bg-green-500 text-black text-center py-3 font-semibold md:hidden z-40">
+  </div>  <!-- Sticky CTA -->  <div id="sticky-cta" class="fixed bottom-0 w-full bg-green-500 text-black text-center py-3 font-semibold md:hidden z-40">
     🎯 Book your private gym session now →
     <a href="#download" class="underline ml-2">Download App</a>
-  </div>  <!-- Main App Content -->  <div id="main" class="opacity-0 transition-opacity duration-500"><!-- Navbar -->
-<nav class="flex justify-between items-center p-4">
-  <img src="logo.png" alt="GymFitPod Logo" class="h-20">
-  <ul class="hidden md:flex gap-6 text-sm">
-    <li><a href="#pods">Pods</a></li>
-    <li><a href="#pricing">Pricing</a></li>
-    <li><a href="#faqs">FAQs</a></li>
-    <li><a href="#about">About</a></li>
-    <li><a href="#vision">Vision</a></li>
-  </ul>
-  <a href="#login" class="bg-[#6ec219] text-black px-4 py-1 rounded font-medium">Log In</a>
-</nav>
-
-<!-- Hero Section -->
+  </div>  <!-- Main App -->  <div id="main" class="opacity-0 transition-opacity duration-500">
+    <!-- Navbar -->
+    <nav class="flex justify-between items-center p-4">
+      <img src="logo.png" alt="GymFitPod Logo" class="h-10">
+      <ul class="hidden md:flex gap-6 text-sm font-semibold text-gray-200">
+        <li><a href="#pods">Pods</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#faqs">FAQs</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#vision">Vision</a></li>
+      </ul>
+      <a href="#login" class="bg-[#6ec219] text-black px-4 py-1 rounded font-medium">Log In</a>
+    </nav><!-- Hero -->
 <section class="text-center p-6 md:p-10 space-y-4 md:space-y-6">
-  <h1 class="text-3xl md:text-4xl font-bold leading-tight">No Crowds. No Mirrors. Just You.</h1>
+  <h1 class="text-3xl md:text-4xl font-bold leading-tight">No Crowds. No Distractions. Just You.</h1>
   <p class="text-gray-300 max-w-xl mx-auto">Experience India’s first private gym pod designed for calm, commitment, and privacy.</p>
-  <div class="flex justify-center">
-    <a href="#pods" class="px-6 py-3 rounded text-black font-semibold" style="background-color: #6EC219;">⬇ Download the App</a>
+  <div class="flex flex-col sm:flex-row justify-center items-center gap-4 mt-6" id="download">
+    <a href="#" class="bg-[#6ec219] text-black px-6 py-3 rounded text-lg font-semibold w-64 text-center">Download for Android</a>
+    <a href="#" class="bg-gray-800 text-white px-6 py-3 rounded text-lg font-semibold w-64 text-center opacity-50 cursor-not-allowed">iOS Coming Soon</a>
   </div>
 </section>
 
-<!-- How It Works -->
-<section class="p-6 md:p-10 text-center">
-  <h2 class="text-2xl font-bold mb-6">How It Works</h2>
-  <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
-    <div>
-      <p class="text-3xl mb-2">📲</p>
-      <p class="font-semibold">Download the App</p>
-      <p class="text-sm text-gray-400">Get GymFitPod on your phone from Google Play or App Store.</p>
-    </div>
-    <div>
-      <p class="text-3xl mb-2">📅</p>
-      <p class="font-semibold">Book Your Pod</p>
-      <p class="text-sm text-gray-400">Choose your time. Reserve your private gym space.</p>
-    </div>
-    <div>
-      <p class="text-3xl mb-2">💪</p>
-      <p class="font-semibold">Workout. Alone.</p>
-      <p class="text-sm text-gray-400">Step into your pod. No crowd. No mirrors. Just you.</p>
-    </div>
-  </div>
-</section>
-
-<!-- Feature Icons -->
-<div class="grid grid-cols-3 sm:grid-cols-3 gap-6 text-center p-6">
-  <div><p class="text-yellow-400 text-xl mb-2">📅</p><p>Easy Booking</p></div>
-  <div><p class="text-yellow-400 text-xl mb-2">🔒</p><p>Private & Safe</p></div>
-  <div><p class="text-yellow-400 text-xl mb-2">⚡</p><p>Smart Access</p></div>
+<!-- Scroll Indicator -->
+<div class="w-full text-center text-gray-500 animate-bounce py-4">
+  ↓ Scroll to Explore ↓
 </div>
-
-<!-- Pod Visual -->
-<section id="pods" class="p-8 space-y-4 text-center">
-  <h2 class="text-2xl font-bold">Your Pod, Your Rules</h2>
-  <p class="text-gray-400">Everything you need. Nothing you don’t.</p>
-  <div class="flex justify-center">
-    <img src="pod1.jpg" alt="Pod Interior" class="rounded max-w-md w-full">
-  </div>
-</section>
 
 <!-- Pricing -->
 <section id="pricing" class="p-10 text-center">
@@ -89,11 +58,12 @@
     <p class="text-xl font-semibold">Standard Plan</p>
     <p class="text-4xl font-bold my-2">₹49</p>
     <p class="text-gray-400 text-sm">per 30-minute session</p>
+    <p class="text-green-400 text-sm mt-2 italic">Your body. Your schedule. Your sanctuary.</p>
   </div>
 </section>
 
 <!-- FAQs -->
-<section id="faqs" class="p-8">
+<section id="faqs" class="p-8 bg-[#111111]">
   <h2 class="text-2xl font-bold text-center mb-4">FAQs</h2>
   <div class="space-y-4 max-w-2xl mx-auto">
     <div><strong>Is it really private?</strong><p class="text-gray-400">Yes. Each pod is completely yours during your session.</p></div>
@@ -103,10 +73,13 @@
 </section>
 
 <!-- About Us -->
-<section id="about" class="p-10 text-center max-w-3xl mx-auto">
+<section id="about" class="p-10 text-center max-w-3xl mx-auto bg-[#111111]">
   <h2 class="text-3xl font-bold mb-4">About Us</h2>
   <p class="text-gray-300 text-lg leading-relaxed">
-    GymFitPod was born from a deep belief that true wellness begins with peace, privacy, and personal space. In a world of overcrowded gyms and noisy distractions, we’re redefining fitness for the modern individual. Every pod is a sanctuary — thoughtfully designed, acoustically insulated, and intelligently automated. No waiting. No judging. No chaos. Just you, your rhythm, and your results. 
+    GymFitPod was born from a deep belief that true wellness begins with peace, privacy, and personal space.
+    In a world of overcrowded gyms and noisy distractions, we’re redefining fitness for the modern individual.
+    Every pod is a sanctuary — thoughtfully designed, acoustically insulated, and intelligently automated.
+    No waiting. No judging. No chaos. Just you, your rhythm, and your results.
   </p>
 </section>
 
@@ -114,8 +87,16 @@
 <section id="vision" class="bg-[#111] py-16 px-6 text-center">
   <h2 class="text-3xl font-bold mb-4 text-white">Our Vision</h2>
   <p class="text-gray-400 text-lg max-w-4xl mx-auto leading-relaxed">
-    We envision a future where every individual in India — no matter their schedule, personality, or privacy needs — has access to a state-of-the-art personal gym space. GymFitPod is more than fitness. It’s a movement to reclaim your time, your health, and your energy. We are building India’s most loved private pod fitness ecosystem, one city at a time.
+    We envision a future where every individual in India — no matter their schedule, personality, or privacy needs —
+    has access to a state-of-the-art personal gym space.
+    GymFitPod is more than fitness. It’s a movement to reclaim your time, your health, and your energy.
+    We are building India’s most loved private pod fitness ecosystem, one city at a time.
   </p>
+</section>
+
+<!-- Footer Vision -->
+<section class="text-center py-6 text-sm text-gray-400 italic">
+  We’re building India’s most private and consistent fitness ecosystem—one pod at a time.
 </section>
 
 <!-- Footer -->
