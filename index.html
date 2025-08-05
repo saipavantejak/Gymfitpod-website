@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -7,48 +6,49 @@
   <title>GymFitPod – Private Fitness Reimagined</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body class="bg-black text-white font-sans">
+<body class="bg-black text-white font-sans">  <!-- PAGE CONTAINER -->  <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8"><!-- NAVBAR -->
+<nav class="flex flex-col md:flex-row justify-between items-center py-6 gap-4">
+  <img src="Gymfitpod_blk_bg.png" alt="Gymfitpod Logo" class="h-14">
+  <ul class="flex flex-wrap gap-6 text-sm font-medium text-gray-200">
+    <li><a href="#pods">Pods</a></li>
+    <li><a href="#pricing">Pricing</a></li>
+    <li><a href="#faqs">FAQs</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#vision">Vision</a></li>
+  </ul>
+  <a href="#login" class="bg-[#6EC11A] text-black px-4 py-2 rounded font-semibold">Log In</a>
+</nav>
 
-  <!-- NAVBAR -->
-  <nav class="flex flex-col sm:flex-row justify-between items-center p-4 gap-2">
-    <img src="Gymfitpod_blk_bg.png" alt="Gymfitpod_blk_bg.png" class="h-20">
-    <ul class="flex flex-wrap gap-6 text-sm font-medium text-gray-200">
-      <li><a href="#pods">Pods</a></li>
-      <li><a href="#pricing">Pricing</a></li>
-      <li><a href="#faqs">FAQs</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#vision">Vision</a></li>
-    </ul>
-    <a href="#login" class="bg-[#6EC11A] text-black px-4 py-1 rounded font-semibold">Log In</a>
-  </nav>
-
-  <!-- HERO -->
-  <section class="text-center px-4 py-10 space-y-4">
-    <h1 class="text-3xl sm:text-4xl font-bold">Where privacy meets commitment.</h1>
-    <p class="text-gray-300 max-w-xl mx-auto">Experience India’s first private gym pod designed for calm, commitment, and privacy.</p>
-
-    <!-- DOWNLOAD CTA -->
-    <div class="flex flex-col sm:flex-row justify-center items-center gap-4 mt-6">
-  <a href="#" style="background-color: #6EC11A;" class="text-black px-6 py-3 rounded text-sm font-semibold shadow-md hover:scale-105 transition">Android – Coming Soon</a>
-  <a href="#" style="background-color: #6EC11A;" class="text-black px-6 py-3 rounded text-sm font-semibold shadow-md hover:scale-105 transition">iOS – Coming Soon</a>
-</div>
-  </section>
-
-  <!-- SCROLL INDICATOR -->
-  <div class="text-center text-[#6EC11A] animate-bounce py-2 text-sm">
-    ↓ Scroll to Explore ↓
+<!-- HERO -->
+<section class="py-16">
+  <div class="max-w-4xl mx-auto text-center px-4 sm:px-6">
+    <h1 class="text-4xl sm:text-5xl font-bold leading-tight mb-4">Where privacy meets commitment.</h1>
+    <p class="text-lg sm:text-xl text-gray-300 mb-6">Experience India’s first private gym pod designed for calm, commitment, and privacy.</p>
+    <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+      <a href="#" class="bg-[#6EC11A] text-black px-6 py-3 rounded text-sm font-semibold shadow-md hover:scale-105 transition">Android – Coming Soon</a>
+      <a href="#" class="bg-[#6EC11A] text-black px-6 py-3 rounded text-sm font-semibold shadow-md hover:scale-105 transition">iOS – Coming Soon</a>
+    </div>
   </div>
+</section>
 
-  <!-- PODS SECTION -->
-  <section id="pods" class="text-center px-6 py-10">
-    <h2 class="text-2xl font-bold mb-2">Workout like no one is watching.</h2>
+<!-- SCROLL INDICATOR -->
+<div class="text-center text-[#6EC11A] animate-bounce py-2 text-sm">
+  ↓ Scroll to Explore ↓
+</div>
+
+<!-- POD SECTION -->
+<section id="pods" class="py-16">
+  <div class="max-w-3xl mx-auto text-center px-4">
+    <h2 class="text-3xl sm:text-4xl font-bold mb-4">Workout like no one is watching.</h2>
     <p class="text-gray-400 mb-6">Because no one is.</p>
-    <img src="pod1.jpg" alt="Pod Interior" class="rounded-xl max-w-lg mx-auto w-full">
-  </section>
+    <img src="pod1.jpg" alt="Pod Interior" class="rounded-xl w-full max-w-xl mx-auto">
+  </div>
+</section>
 
-  <!-- PRICING -->
-  <section id="pricing" class="px-6 py-10 text-center">
-    <h2 class="text-2xl font-bold text-white mb-2">Our Pricing</h2>
+<!-- PRICING SECTION -->
+<section id="pricing" class="py-16 text-center">
+  <div class="max-w-xl mx-auto">
+    <h2 class="text-3xl font-bold mb-2">Our Pricing</h2>
     <p class="text-gray-400 mb-6">Simple. Flexible. ₹49 per 30 minutes.</p>
     <div class="inline-block border border-gray-700 p-6 rounded-xl">
       <p class="text-xl font-semibold">Starting Plan</p>
@@ -56,50 +56,57 @@
       <p class="text-gray-400 text-sm">per 30-minute session</p>
       <p class="text-[#6EC11A] text-sm mt-2 italic">Your body. Your schedule. Your sanctuary.</p>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- FAQ -->
-  <section id="faqs" class="p-8 bg-[#111111]">
-    <h2 class="text-2xl font-bold text-white mb-4 text-center">FAQs</h2>
-    <div class="space-y-4 max-w-2xl mx-auto text-left">
+<!-- FAQ SECTION -->
+<section id="faqs" class="bg-[#111111] py-16">
+  <div class="max-w-3xl mx-auto px-4">
+    <h2 class="text-3xl font-bold text-center mb-6">FAQs</h2>
+    <div class="space-y-6">
       <div><strong>Is it really private?</strong><p class="text-gray-400">Yes. Each pod is completely yours during your session.</p></div>
       <div><strong>How do I unlock the pod?</strong><p class="text-gray-400">Using your phone after booking confirmation.</p></div>
-      <div><strong>Can I cancel my booking?</strong><p class="text-gray-400">Yes, with a 24 hour prior notice.</p></div>
+      <div><strong>Can I cancel my booking?</strong><p class="text-gray-400">Yes, with a 24-hour prior notice.</p></div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- ABOUT -->
-  <section id="about" class="p-10 bg-[#111111] max-w-3xl mx-auto text-center">
-    <h2 class="text-3xl font-bold mb-4 text-white">About Us</h2>
+<!-- ABOUT SECTION -->
+<section id="about" class="bg-[#111111] py-16">
+  <div class="max-w-3xl mx-auto px-4 text-center">
+    <h2 class="text-3xl font-bold mb-4">About Us</h2>
     <p class="text-gray-300 text-lg leading-relaxed">
       GymFitPod was born from a deep belief that true wellness begins with peace, privacy, and personal space.
       In a world of overcrowded gyms and noisy distractions, we’re redefining fitness for the modern individual.
       Every pod is a sanctuary — thoughtfully designed, acoustically insulated, and intelligently automated.
       No waiting. No judging. No chaos. Just you, your rhythm, and your results.
     </p>
-  </section>
+  </div>
+</section>
 
-  <!-- VISION -->
-  <section id="vision" class="bg-[#111111] py-16 px-6 text-center">
-    <h2 class="text-3xl font-bold mb-4 text-white">Our Vision</h2>
-    <p class="text-gray-400 text-lg max-w-4xl mx-auto leading-relaxed">
+<!-- VISION SECTION -->
+<section id="vision" class="bg-[#111111] py-16">
+  <div class="max-w-4xl mx-auto text-center px-4">
+    <h2 class="text-3xl font-bold mb-4">Our Vision</h2>
+    <p class="text-gray-400 text-lg leading-relaxed">
       We envision a future where every individual in India — no matter their schedule, personality, or privacy needs —
       has access to a state-of-the-art personal gym space.
       GymFitPod is more than fitness. It’s a movement to reclaim your time, your health, and your energy.
       We are building India’s most loved private pod fitness ecosystem, one city at a time.
     </p>
-  </section>
+  </div>
+</section>
 
-  <!-- VISION FOOTER -->
-  <section class="py-6 text-sm text-center text-gray-400 italic">
-    We’re building India’s most private and consistent fitness ecosystem—one pod at a time.
-  </section>
+<!-- VISION FOOTER -->
+<section class="py-6 text-sm text-center text-gray-400 italic">
+  We’re building India’s most private and consistent fitness ecosystem—one pod at a time.
+</section>
 
-  <!-- FOOTER -->
+<!-- FOOTER -->
 <footer class="text-center text-gray-500 p-6 text-sm">
   &copy; 2025 GymFitPod Private Limited. All rights reserved.<br/>
   📧 info@gymfitpod.in &nbsp; | &nbsp; 📞 +91 98765 43210 &nbsp; | &nbsp; 📍 Hyderabad, India
 </footer>
 
-</body>
+  </div></body>
 </html>
